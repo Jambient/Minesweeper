@@ -200,8 +200,8 @@ function love.load()
         extern vec2 screenSize;
 
         vec4 effect(vec4 color, Image image, vec2 uvs, vec2 screen_coords) {
-            float t = (screen_coords.y-650)/screenSize.y;
-            vec4 pixel = Texel(image, uvs);
+            float t = screen_coords.y/screenSize.y;
+            vec4 pixel = Texel(image, uvs) * color;
 
             return vec4(pixel.r, pixel.g, pixel.b, mix(0, 1, t));
 
