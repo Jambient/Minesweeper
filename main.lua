@@ -204,8 +204,6 @@ function love.load()
             vec4 pixel = Texel(image, uvs) * color;
 
             return vec4(pixel.r, pixel.g, pixel.b, mix(0, 1, t));
-
-            //return vec4(mix(color1.r, color2.r, t), mix(color1.g, color2.g, t), mix(color1.b, color2.b, t), 1) * pixel;
         }
     ]]
 
