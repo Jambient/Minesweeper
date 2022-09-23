@@ -188,10 +188,10 @@ function love.load()
         flagsLeft = mineNumber;
     }
 
-    FlagIcon = love.graphics.newImage("FlagIcon.png")
-    MineIcon = love.graphics.newImage("MineIcon.png")
+    FlagIcon = love.graphics.newImage("sprites/ui/FlagIcon.png")
+    MineIcon = love.graphics.newImage("sprites/ui/MineIcon.png")
 
-    testFont = love.graphics.newFont("bold.otf", 16)
+    testFont = love.graphics.newFont("fonts/momcake/bold.otf", 16)
     testFont:setFilter("nearest", "nearest")
 
     particles = {}
